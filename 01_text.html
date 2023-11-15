@@ -6,34 +6,46 @@
     <meta name="keywords" content="lutfullin, html, website">
     <meta name="description" content="This is my first html website">
     <title>My website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="/ imgs/me.jpg" alt="Ruslan lutfullin" width="150">
+
+    <div class="container">
+        
+        
+    <img src="/ imgs/me.jpg" alt="Ruslan lutfullin"  class="avatar">
+    <div class="info">
+
   <h1>Ruslan lutfullin</h1>
 
-  <p>Im a frontend developer. Also having a background in <strong>my own </strong> <em>businnes</em> </p>
+  <p >Im a frontend developer. Also having a background in <strong>my own </strong> <em>businnes</em> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod a ex laboriosam unde tenetur atque provident omnis, minus consequuntur quisquam quae officiis, inventore repellendus ut consequatur culpa commodi, magni placeat! </p>
 
-  <h2>My Social medias</h2>
+  <div class="cards socialmedia-card">
+    <h2>My Social medias</h2>
 
-  <a href="https://www.linkedin.com/in/ruslan-lutfullin/"  target="_blank" >LinkedIn</a>
+    <a href="https://www.linkedin.com/in/ruslan-lutfullin/"  target="_blank" >LinkedIn</a>
+  </div>
+
+</div>
+
+  <div class="cards card-hobby">
 
     <h2>My hobbies</h2>
 
-    <ol>
+    <ol class="list">
         <li>Wife</li>
         <li>Kids</li>
         <li>Sim-racing</li>
         <li>Camping</li>
     </ol>
+</div>
+
+<div class="cards card-experience ">
 
     <h2>My experience</h2>
-    <table width="500">
-    <thead>
-    <tr>
-            <th>Company</th>
-            <th>Role</th>
-            <th>Year</th>
-    </tr>
+    <table class="table">
+    <thead >
+
     <tr>
         <td>Sunny appliance</td>
         <td>Technician</td>
@@ -54,26 +66,40 @@
 </thead>
 </table>
 
+</div>
+
+<div class="cards card-contact-me">
+
+
+<form class="form">
 <h2>Contact me </h2>
-<form>
-    <div>
-        <label for="1">Enter Name:</label>
-        <input type="text" placeholder="Your name" id="1">
+
+<div class="form-row">
+
+    <div class="form-group">
+        <label for="1">Your Name:</label>
+        <input type="text" placeholder="Enter Your name" id="1">
     </div>
    
-    <div>
-        <label>Enter Email:</label>
-        <input type="email" placeholder="Your Email">
+    <div class="form-group">
+        <label>Your Email:</label>
+        <input type="email" placeholder="Enter Your Email">
     </div>
-    <div>
-        <label>Enter Message:</label>
-        <br>
+</div>
+
+    <div class="form-group">
+        <label> Message:</label>
+
         <textarea placeholder="Enter your message here..." rows="5" cols="20"> </textarea>
     </div>
     <div>
-        <input type="submit" value="Send">
+        <input type="submit" value="Send" class="btn">
     </div>
    
+    
 </form>
+</div>
+</div>
+
 </body>
 </html>
